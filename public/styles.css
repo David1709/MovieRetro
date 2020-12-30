@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #F2F2FA;
+  background: #F2F2FA url(assets/background.svg) no-repeat 90% 50%;
 }
 
 header {
@@ -63,13 +63,35 @@ div.container ul.in li:nth-child(2) a:hover {
 }
 
 
-
 div.container ul.in li + li {
   margin-left: 20px;
 }
 
 div.container ul li + li {
   margin-left: 60px;
+}
+
+main.movies {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+main.container div {
+  display: flex;
+  justify-content: center;
+  margin: 25px 10px;
+}
+
+main.container div img {
+  width: 180px;
+  height: 250px;
+}
+
+footer {
+  margin-top: 100px;
+  height: 250px;
+  background: #002449;
 }
 
 .container {
