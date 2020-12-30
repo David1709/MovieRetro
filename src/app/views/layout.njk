@@ -3,80 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head %}
     <title>MovieRetro</title>
+    {% endblock %}
+
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <header>
-      <div class="container">
+    {% include "header.njk" %}
 
-        <div class="logo">
-          <h1>📼</h1>
-        </div>
+    {% block content %}{% endblock %}
 
-        <ul class="nav">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-        </ul>
-
-        <ul class="in">
-          <li>
-            <a href="#">Login</a>
-          </li>
-          <li>
-            <a href="#">Singin</a>
-          </li>
-        </ul>
-
-      </div>
-
-    </header>
-
-    <main class="container movies">
-
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-
-      <div class="">
-        <img src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-      </div>
-
-    </main>
-
-    <footer>
-
-    </footer>
-
+    {% include "footer.njk" %}
   </body>
 </html>
