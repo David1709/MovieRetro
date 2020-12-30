@@ -4,37 +4,11 @@
 
 <main class="container movies">
 
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
-
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
-
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
-
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
-
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
-
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
-
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
-
-  <div>
-    <img class="cover" src="https://s3.amazonaws.com/com.marvel.terrigen/prod/captainmarvel_lob_crd_06.jpg" alt="Captain Marvel">
-  </div>
+  {% for movie in movies %}
+    <div>
+      <img class="cover" src="{{movie.cove}}" alt="{{movie.title}}">
+    </div>
+  {% endfor %}
 
 </main>
 
