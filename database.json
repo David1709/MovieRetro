@@ -1,0 +1,31 @@
+{
+  "movies": [
+    {
+      "id": "023c8902-6f7d-4fe3-9bd4-f77747c42249",
+      "title": "The Matrix",
+      "genre": "Action, Sci-Fi,",
+      "sinopsis": "Thomas Anderson, a computer programmer, is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix.",
+      "year": "19984",
+      "duration": "150",
+      "cove": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg"
+    },
+    {
+      "id": "826558c9-0c83-45b7-b709-435a365e78a8",
+      "title": "Deep Impact",
+      "genre": "Sci-fi, Drama",
+      "sinopsis": "According to predictions, a deadly comet is about to strike Earth and destroy humanity. US President Beck devises a strategy to build a network of caves for accommodating one million Americans.",
+      "year": "1998",
+      "duration": "121",
+      "cove": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6J1m-9D9aYIBtOugm2YmhM5WZieCEJAVy_hgtqXAiE_TyymWW"
+    },
+    {
+      "id": "4555cde1-4048-446b-9a8f-ffad890a1293",
+      "title": "Forrest Gump",
+      "genre": "Drama, Romance",
+      "sinopsis": "Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. All he wants now is to be reunited with his childhood sweetheart, Jenny.",
+      "year": "1994",
+      "duration": "150",
+      "cove": "https://posteritati.com/posters/000/000/053/106/forrest-gump-md-web.jpg"
+    }
+  ]
+}
