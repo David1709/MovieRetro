@@ -77,16 +77,21 @@ main.movies {
   grid-template-columns: auto auto auto auto;
 }
 
-main.container div {
+main.container > div {
   display: flex;
   justify-content: center;
-  margin: 25px 10px;
+  margin: 25px 0;
 }
 
-main.container div img {
+main.container > div img.cover {
   width: 180px;
   height: 250px;
+  border-radius: 5px;
 }
+
+/*
+ * Footer 
+ */
 
 footer {
   margin-top: 100px;
@@ -94,7 +99,88 @@ footer {
   background: #002449;
 }
 
+/*
+ * Movie Form
+ */
+
+main.add-movies.container {
+  margin-top: 50px;
+}
+
+.btn-back {
+  width: 120px;
+  height: 60px;
+  background: #A8A8B3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+main.add-movies.container div.add-movie {
+  margin-top: 50px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+main.add-movies.container div.add-movie form {
+  max-width: 50%;
+}
+
+main.add-movies.container div.add-movie > img.form-cover {
+  max-width: 40%;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 5px;
+  /*border: 2px cornflowerblue dashed;*/
+}
+
+main.add-movies.container div.add-movie form label {
+  padding-left: 20px;
+}
+
+main.add-movies.container div.add-movie form input, textarea {
+  width: 100%;
+  border: none;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.add-movie form .field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+main.add-movies.container div.add-movie form .add-movie-save {
+  min-width: 100%;
+  height: 60px;
+  background: #21BFFD;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Classes */
+
 .container {
   max-width: 946px;
   margin: auto;
+}
+
+.btn-back {
+  width: 120px;
+  height: 60px;
+  background: #A8A8B3;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
 }
