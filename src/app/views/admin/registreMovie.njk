@@ -1,0 +1,49 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+  <main class="add-movies container">
+
+    <button class="btn-back">
+      Back
+    </button>
+
+    <div class="add-movie">
+      <form action="">
+        <label>Title:</label>
+        <input name="title" required="required">
+
+        <label>Genre:</label>
+        <input name="genre" required="required">
+
+        <label>What this is about:</label>
+        <textarea name="sinopsis"></textarea>
+
+        <div class="field">
+          <div class="fields">
+            <label>Year:</label>
+            <input type="number" name="genre" required="required">
+          </div>
+
+          <div class="fields">
+            <label>Duration:</label>
+            <input type="number" name="duration" required="required">
+          </div>
+
+        </div>
+
+        <label>Cover:</label>
+        <input name="cove" required="required">
+
+        <button class="add-movie-save" type="submit">Save</button>
+
+      </form>
+
+
+        <img class="form-cover" src="https://images-na.ssl-images-amazon.com/images/I/816wlBnZx2L._SL1500_.jpg" alt="Name">
+
+    </div>
+
+  </main>
+
+{% endblock content %}
