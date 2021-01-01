@@ -20,7 +20,7 @@ module.exports = {
             if (err) return res.send("Write file error");
 
             // console.log("movie added");
-            return res.redirect('/');
+            res.redirect('/');
         });
     },
 
