@@ -1,6 +1,7 @@
 const express = require('express');
 const movieController = require('../app/controllers/movieController');
 const loginController = require('../app/controllers/loginController');
+const registerController = require('../app/controllers/registerController');
 
 const routes = express.Router();
 
