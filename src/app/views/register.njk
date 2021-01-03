@@ -1,0 +1,33 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+  <main class="add-movies container">
+
+    <button class="btn-back">
+      Back
+    </button>
+
+    <div class="add-movie">
+      <form action="/login" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Password:</label>
+        <input type="password" name="Password" required>
+
+        <button class="add-movie-save" type="submit">Register</button>
+
+      </form>
+
+
+        {# <img class="form-cover" src="https://images-na.ssl-images-amazon.com/images/I/816wlBnZx2L._SL1500_.jpg" alt="Name"> #}
+
+    </div>
+
+  </main>
+
+{% endblock content %}
