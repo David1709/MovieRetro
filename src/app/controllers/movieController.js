@@ -19,13 +19,13 @@ module.exports = {
         fs.writeFile('database.json', JSON.stringify(db, null, 2), (err) => {
             if (err) return res.send("Write file error");
 
-             console.log("redi...");
+         //    console.log("redi...");
             res.redirect('/');
         });
     },
 
     getAll(req, res) {
-        console.log("renderi index");
+       // console.log("renderi index");
         return res.render('home/index.njk', { movies: db.movies });
     }
 }
